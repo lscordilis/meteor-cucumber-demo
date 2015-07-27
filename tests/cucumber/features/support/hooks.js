@@ -1,9 +1,11 @@
 /**
- * Created by lscordilis on 7/14/2015.
+ * Created by lscordilis on 7/23/2015.
  */
 
-module.exports = function() {
-    this.Before(function(callback) {
-        this.server.call('reset').then(callback);
-    });
-};
+(function() {
+    module.exports = function() {
+        this.Before(function(callback){
+            this.server.call('reset').then(callback);
+        });
+    };
+})();

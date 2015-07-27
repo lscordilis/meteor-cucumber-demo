@@ -1,12 +1,14 @@
 /**
- * Created by lscordilis on 7/14/2015.
+ * Created by lscordilis on 7/23/2015.
  */
 
-Meteor.methods({
-    'reset': function() {
-        Pages.remove({});
-    },
-    'page/create': function(page) {
-        Pages.insert(page)
-    }
-});
+(function(){
+    Meteor.methods({
+        'reset': function() {
+            Pages.remove({});
+        },
+        'page/create': function(page){
+            Pages.insert(page);
+        }
+    });
+})();
